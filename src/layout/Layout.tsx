@@ -17,12 +17,12 @@ const Index: FC<Iprops> = ({ children }) => {
     token: { colorBgContainer, borderRadiusLG },
   } = theme.useToken();
 
-  const colorPrimary = useAppSelector(state => state.theme.colorPrimary);
+  const colorPrimary = useAppSelector((state) => state.theme.colorPrimary);
   return (
     <ConfigProvider
       theme={{
         token: {
-          colorPrimary,
+          colorPrimary: colorPrimary,
         },
       }}
     >
